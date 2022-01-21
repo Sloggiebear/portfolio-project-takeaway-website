@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Takeaway</title>
+    <link rel="stylesheet" type="text/css" href="style.css" media="screen" />
+  </head>
+  <body>
+    <!-- Start Nav -->
+    <nav id="nav">
+      <ul id="navitems"></ul>
+    </nav>
+    <!-- End Nav -->
+
+    <!-- Start Memu -->
+    <section id="menu"></section>
+    <!-- End Menu -->
+
+    <!-- Start Modal -->
+    <div id="modal" class="modal--container">
+      <div class="modal--content">
+        <div id="btn-close" class="modal--btn-close">
+          <img src="/img/icon-close.svg" class="btn--close" alt="close" />
+        </div>
+        <form>
+          <div class="order-details">
+            <span id="addcart-item-name">Item Name</span>
+            <span id="addcart-item-price">Item Price</span>
+          </div>
+          <div id="order-quantity" class="order-quantity">
+            <button id="btn-quanity-minus" class="btn--quantity-change">
+              -
+            </button>
+            <label for="quantity">
+              <input
+                class="input--quantity"
+                id="quantity"
+                type="number"
+                value="1"
+                min="1"
+                placeholder="Enter Quantity"
+              />
+            </label>
+            <button id="btn-quanity-plus" class="btn--quantity-change">
+              +
+            </button>
+          </div>
+          <button id="btn-addtoorder" class="btn--addtoorder" type="submit">
+            Add to Order
+          </button>
+        </form>
+      </div>
+    </div>
+    <!-- End Modal -->
+
+    <!-- Start Footer -->
+    <footer>
+      <h3 class="footer--heading">Footer Header</h3>
+      <div class="footer--columns">
+        <div class="footer--col">
+          <h4>Lorem Ipsum</h4>
+          Lorem ipsum dolor, sit amet consectetur adipisicing elit. Voluptates
+          iusto assumenda necessitatibus quos at expedita dolorum,
+          exercitationem impedit quasi dolore qui officia voluptatibus quia
+          natus reiciendis provident eius sed ipsa.
+        </div>
+        <div class="footer--col">
+          <h4>Lorem Ipsum</h4>
+          Lorem ipsum dolor, sit amet consectetur adipisicing elit. Voluptates
+          iusto assumenda necessitatibus quos at expedita dolorum,
+          exercitationem impedit quasi dolore qui officia voluptatibus quia
+          natus reiciendis provident eius sed ipsa.
+        </div>
+        <div class="footer--col">
+          <h4>Lorem Ipsum</h4>
+          Lorem ipsum dolor, sit amet consectetur adipisicing elit. Voluptates
+          iusto assumenda
+          <ul>
+            <li>List Item</li>
+            <li>List Item</li>
+            <li>List Item</li>
+            <li>List Item</li>
+            <li>List Item</li>
+          </ul>
+        </div>
+        <div class="footer--col">
+          <h4>Lorem Ipsum</h4>
+          <ul>
+            <li>List Item</li>
+            <li>List Item</li>
+            <li>List Item</li>
+            <li>List Item</li>
+            <li>List Item</li>
+          </ul>
+        </div>
+      </div>
+    </footer>
+  </body>
+  <script src="app.js"></script>
+</html>

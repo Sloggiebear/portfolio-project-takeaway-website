@@ -2,8 +2,7 @@
 * {
   padding: 0px;
   margin: 0px;
-  -webkit-box-sizing: border-box;
-          box-sizing: border-box;
+  box-sizing: border-box;
 }
 
 html {
@@ -15,35 +14,26 @@ body {
 }
 
 nav {
-  position: -webkit-sticky;
   position: sticky;
   top: 0;
   background-color: #313131;
   font-size: 1.3rem;
   z-index: 20;
   text-transform: uppercase;
+  height: 100px;
 }
 
 nav ul {
   list-style: none;
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-orient: horizontal;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: row;
-          flex-direction: row;
-  -ms-flex-wrap: wrap;
-      flex-wrap: wrap;
-  -ms-flex-line-pack: center;
-      align-content: center;
-  -webkit-box-pack: space-evenly;
-      -ms-flex-pack: space-evenly;
-          justify-content: space-evenly;
+  flex-direction: row;
+  flex-wrap: wrap;
+  align-content: center;
+  justify-content: space-evenly;
 }
 
 nav li {
-  padding: 35px 10px 35px 10px;
+  padding: 35px 10px 34px 10px;
 }
 
 nav li a {
@@ -56,27 +46,22 @@ nav li a:hover {
   color: #da1f7c;
 }
 
+section {
+  min-height: 80vh;
+  width: 100%;
+  background-color: hotpink;
+}
+
 .menu--section {
-  padding: 1rem;
+  padding: 120px 20px 100px 20px;
   background-color: hotpink;
   height: 100vh;
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  -ms-flex-wrap: nowrap;
-      flex-wrap: nowrap;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -ms-flex-line-pack: center;
-      align-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  flex-direction: column;
+  flex-wrap: nowrap;
+  justify-content: center;
+  align-content: center;
+  align-items: center;
 }
 
 .menu--section:nth-child(2) {
@@ -114,34 +99,21 @@ nav li a:hover {
   font-size: 1.4rem;
   width: 90%;
   max-width: 500px;
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  padding: 1.2em;
-  margin-bottom: 2rem;
+  padding: 0.8em;
+  margin-bottom: 1rem;
   background-color: #ffffff;
-  -webkit-box-orient: horizontal;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: row;
-          flex-direction: row;
-  -ms-flex-wrap: nowrap;
-      flex-wrap: nowrap;
-  -ms-flex-line-pack: center;
-      align-content: center;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  align-content: center;
+  justify-content: space-between;
+  align-items: center;
   cursor: pointer;
-  -webkit-transition: all ease-in-out 0.2s;
   transition: all ease-in-out 0.2s;
 }
 
 .menu-item:hover {
-  -webkit-box-shadow: 2px 2px 15px 5px #00000061;
-          box-shadow: 2px 2px 15px 5px #00000061;
+  box-shadow: 2px 2px 15px 5px #00000061;
   border-left: 20px solid #363636;
 }
 
@@ -162,8 +134,7 @@ nav li a:hover {
   left: -10px;
   padding: 0.3em;
   font-size: 1rem;
-  -webkit-box-shadow: 2px 2px 9px -3px #00000082;
-          box-shadow: 2px 2px 9px -3px #00000082;
+  box-shadow: 2px 2px 9px -3px #00000082;
 }
 
 .modal--container {
@@ -181,7 +152,7 @@ nav li a:hover {
   width: 100vw;
   height: 100vh;
   background-color: rgba(0, 0, 0, 0.445);
-  z-index: 10;
+  z-index: 30;
 }
 
 .modal--btn-close {
@@ -204,59 +175,43 @@ nav li a:hover {
   position: absolute;
   left: 50%;
   top: 50%;
-  -webkit-transform: translate(-50%, -50%);
-          transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
   padding: 30px;
   border-radius: 20px;
 }
 
 .modal--content form {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  -ms-flex-line-pack: center;
-      align-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  flex-direction: column;
+  align-content: center;
+  align-items: center;
+  justify-content: center;
   padding: 30px;
 }
 
+.modal--content form label {
+  display: contents;
+}
+
 .modal--content form .order-details {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
   padding: 1em;
   margin-bottom: 1rem;
   width: 100%;
   font-size: 1.5rem;
-  -ms-flex-pack: distribute;
-      justify-content: space-around;
+  justify-content: space-around;
 }
 
 .modal--content form .order-quantity {
+  width: 100%;
   text-align: center;
   font-size: 1.5rem;
   margin-bottom: 4em;
   height: 40px;
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -ms-flex-line-pack: center;
-      align-content: center;
-  -webkit-box-pack: space-evenly;
-      -ms-flex-pack: space-evenly;
-          justify-content: space-evenly;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  align-content: center;
+  justify-content: space-evenly;
+  align-items: center;
 }
 
 .modal--content form .order-quantity .btn--quantity-change {
@@ -269,15 +224,9 @@ nav li a:hover {
   width: 40px;
   border-radius: 50%;
   font-size: 2rem;
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  align-items: center;
+  justify-content: center;
   cursor: pointer;
 }
 
@@ -302,9 +251,9 @@ nav li a:hover {
 .input--quantity {
   text-align: center;
   font-size: 1.5rem;
-  margin-bottom: 1rem;
   margin: 0px 10px 0px 10px;
   padding: 10px;
+  max-width: 50%;
 }
 
 /* Chrome, Safari, Edge, Opera */
@@ -334,23 +283,12 @@ footer .footer--heading {
 }
 
 footer .footer--columns {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-orient: horizontal;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: row;
-          flex-direction: row;
-  -ms-flex-wrap: wrap;
-      flex-wrap: wrap;
-  -ms-flex-line-pack: center;
-      align-content: center;
-  -webkit-box-pack: space-evenly;
-      -ms-flex-pack: space-evenly;
-          justify-content: space-evenly;
-  -webkit-box-align: start;
-      -ms-flex-align: start;
-          align-items: flex-start;
+  flex-direction: row;
+  flex-wrap: wrap;
+  align-content: center;
+  justify-content: space-evenly;
+  align-items: flex-start;
 }
 
 footer .footer--col {
@@ -368,4 +306,3 @@ footer .footer--col ul,
 footer .footer--col li {
   margin-left: 15px;
 }
-/*# sourceMappingURL=style.css.map */

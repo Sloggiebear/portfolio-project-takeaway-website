@@ -80,6 +80,7 @@ const quantityPlus = document.getElementById('btn-quanity-plus')
 //onclick - Hide the modal user clicks close button
 closeButton.addEventListener('click', () => {
     modal.classList.toggle('show')
+    quantity.value = 1 // This is just for aesthics for now, the onsubmit button would have a reset function
 })
 
 //onclick - Hide the modal user clicks outside of the modal content
@@ -93,6 +94,7 @@ modal.addEventListener('click', (event) => {
 addToOrderButton.addEventListener('click', (event) => {
     event.preventDefault()
     modal.classList.toggle('show')
+    quantity.value = 1 // This is just for aesthics for now, the onsubmit button would have a reset function
 })
 
 //onclick - Reduce the value of the order quantity

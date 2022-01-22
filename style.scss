@@ -21,6 +21,7 @@ nav {
   font-size: 1.3rem;
   z-index: 20;
   text-transform: uppercase;
+  height: 100px;
 
   ul {
     list-style: none;
@@ -32,7 +33,7 @@ nav {
   }
 
   li {
-    padding: 35px 10px 35px 10px;
+    padding: 35px 10px 34px 10px;
 
     a {
       color: #ffffff;
@@ -46,8 +47,14 @@ nav {
   }
 }
 
+section {
+  min-height: 80vh;
+  width: 100%;
+  background-color: hotpink;
+}
+
 .menu--section {
-  padding: 1rem;
+  padding: 120px 20px 100px 20px;
   background-color: hotpink;
   height: 100vh;
   display: flex;
@@ -91,8 +98,8 @@ nav {
   width: 90%;
   max-width: 500px;
   display: flex;
-  padding: 1.2em;
-  margin-bottom: 2rem;
+  padding: 0.8em;
+  margin-bottom: 1rem;
   background-color: #ffffff;
   flex-direction: row;
   flex-wrap: nowrap;
@@ -145,7 +152,7 @@ nav {
   width: 100vw;
   height: 100vh;
   background-color: rgba(0, 0, 0, 0.445);
-  z-index: 10;
+  z-index: 30;
 }
 
 .modal--btn-close {
@@ -180,6 +187,10 @@ nav {
     justify-content: center;
     padding: 30px;
 
+    label {
+      display: contents;
+    }
+
     .order-details {
       display: flex;
       padding: 1em;
@@ -190,6 +201,7 @@ nav {
     }
 
     .order-quantity {
+      width: 100%;
       text-align: center;
       font-size: 1.5rem;
       margin-bottom: 4em;
@@ -239,9 +251,9 @@ nav {
 .input--quantity {
   text-align: center;
   font-size: 1.5rem;
-  margin-bottom: 1rem;
   margin: 0px 10px 0px 10px;
   padding: 10px;
+  max-width: 50%;
 }
 
 /* Chrome, Safari, Edge, Opera */

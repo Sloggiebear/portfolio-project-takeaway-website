@@ -14,7 +14,8 @@ body {
 }
 
 nav {
-  position: sticky;
+  position: fixed;
+  width: 100%;
   top: 0;
   background-color: #313131;
   font-size: 1.3rem;
@@ -47,6 +48,7 @@ nav li a:hover {
 }
 
 section {
+  display: block;
   min-height: 80vh;
   width: 100%;
   background-color: hotpink;

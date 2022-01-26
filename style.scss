@@ -1,4 +1,5 @@
 @import url("https://fonts.googleapis.com/css2?family=Oswald:wght@300;700&display=swap");
+@import url('https://fonts.googleapis.com/css2?family=Work+Sans:wght@300&display=swap');
 
 * {
   padding: 0px;
@@ -11,8 +12,16 @@ html {
 }
 
 body {
+  font-family: 'Work Sans', sans-serif;
+}
+h1,h2,h3,h4,h5,h6 {
   font-family: "Oswald", sans-serif;
 }
+
+.logo {
+  max-width: 150px;
+  width: 100%;
+} 
 
 nav {
   position: fixed;
@@ -22,7 +31,12 @@ nav {
   font-size: 1.3rem;
   z-index: 20;
   text-transform: uppercase;
-  height: 100px;
+  min-height: 2rem;
+  display: flex;
+  align-content: center;
+  flex-direction: row;
+  justify-content: space-around;
+  font-family: "Oswald", sans-serif;
 
   ul {
     list-style: none;
@@ -34,7 +48,7 @@ nav {
   }
 
   li {
-    padding: 35px 10px 34px 10px;
+    padding: 15px 10px 15px 10px;
 
     a {
       color: #ffffff;
@@ -50,13 +64,13 @@ nav {
 
 section {
   display: block;
-  min-height: 80vh;
   width: 100%;
   background-color: hotpink;
 }
 
 .menu--section {
   padding: 120px 20px 100px 20px;
+  min-height: min-content;
   background-color: hotpink;
   height: 100vh;
   display: flex;
@@ -83,10 +97,12 @@ section {
   }
 
   h2 {
-    font-size: 4rem;
+    font-size: clamp(2rem, 4rem, 5rem);
     margin-bottom: 2rem;
     text-transform: uppercase;
     color: white;
+    text-align: center;
+    line-height: 4rem;
   }
 }
 
@@ -204,6 +220,7 @@ section {
 
     .order-quantity {
       width: 100%;
+      max-width: 200px;
       text-align: center;
       font-size: 1.5rem;
       margin-bottom: 4em;
@@ -276,7 +293,6 @@ footer {
   background-color: rgb(53, 53, 53);
   color: white;
   padding: 2rem;
-  font-size: 1.3rem;
 
   .footer--heading {
     font-size: 2.2rem;
@@ -305,6 +321,26 @@ footer {
     ul,
     li {
       margin-left: 15px;
+    }
+  }
+}
+
+.social {
+  display: flex;
+  align-items: center;
+  flex-direction: row;
+  padding: 10px 0px;
+
+  svg {
+    fill: #ffffff;
+    width: 30px;
+    height: auto;
+    margin: 10px 15px 0px 0px;
+    transition: all ease-in-out 1.5s;
+
+    &:hover {
+      fill: hotpink;
+      transform: scale(1.2);
     }
   }
 }

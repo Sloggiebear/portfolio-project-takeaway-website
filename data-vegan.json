@@ -1,0 +1,99 @@
+{
+    "MenuSections":[
+       {
+          "Name":"Vegan Burgers",
+          "MenuItems":[
+             {
+                "Name":"Beetroot Burger",
+                "Price":5,
+                "SoldOut":false
+             },
+             {
+                "Name":"Chickpea Burger",
+                "Price":3,
+                "SoldOut":false
+             },
+             {
+                "Name":"Cauliflower Burger",
+                "Price":3,
+                "SoldOut":true
+             },
+             {
+                "Name":"Black Bean Burger",
+                "Price":3,
+                "SoldOut":false
+             }
+          ]
+       },
+       {
+          "Name":"Falafel",
+          "MenuItems":[
+             {
+                "Name":"Classic Falafel",
+                "Price":7,
+                "SoldOut":false
+             },
+             {
+                "Name":"Curry Falafel",
+                "Price":8,
+                "SoldOut":true
+             },
+             {
+                "Name":"Spicy Falafel",
+                "Price":8,
+                "SoldOut":false
+             }
+          ]
+       },
+       {
+          "Name":"Fries",
+          "MenuItems":[
+             {
+                "Name":"Fries",
+                "Price":2.5,
+                "SoldOut":false
+             },
+             {
+                "Name":"Vegan Garlic Fries",
+                "Price":3.2,
+                "SoldOut":false
+             },
+             {
+                "Name":"Sweet Potatoe Fries",
+                "Price":3.5,
+                "SoldOut":false
+             },
+             {
+                "Name":"Curry Fries",
+                "Price":3.5,
+                "SoldOut":false
+             }
+          ]
+       },
+       {
+          "Name":"Drinks",
+          "MenuItems":[
+             {
+                "Name":"Coke",
+                "Price":1.2,
+                "SoldOut":false
+             },
+             {
+                "Name":"Coconut Water",
+                "Price":1.2,
+                "SoldOut":false
+             },
+             {
+                "Name":"Orange Juice",
+                "Price":1.2,
+                "SoldOut":false
+             },
+             {
+               "Name":"Mineral Water",
+               "Price":1.2,
+               "SoldOut":false
+            }
+          ]
+       }
+    ]
+ }

@@ -1,5 +1,7 @@
 
-const apiURL = "https://api.npoint.io/5f458ccb947908d10993"
+const apiURL = "data-vegan.json"
+// Changed the datasource to a local veganised version json file for my portfolio to normalise plant-based alternatives.
+// const apiURL = "https://api.npoint.io/5f458ccb947908d10993" 
 
 const formatter = new Intl.NumberFormat('en-EU', {
     style: 'currency',

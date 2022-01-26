@@ -26,6 +26,7 @@ h1,h2,h3,h4,h5,h6 {
 .logo-footer {
   max-width: 150px;
   width: 100%;
+  margin-bottom: 1em;
 } 
 
 nav {
@@ -364,11 +365,11 @@ footer {
     width: 30px;
     height: auto;
     margin: 10px 15px 0px 0px;
-    transition: all ease-in-out 1.5s;
+    transition: all ease-in-out .3s;
 
     &:hover {
       fill: hotpink;
-      transform: scale(1.2);
+      transform: scale(1.1);
     }
   }
 }
@@ -390,6 +391,31 @@ footer {
   }
 }
 
+.close-symbol {
+  .line-top{
+    background-color: hotpink;
+    transform-origin: center;
+    transform: rotate(45deg) translate(6px, 5px);
+    height: 3px;
+    transition: all ease-in-out .2s;
+  }
+  .line-middle{
+    opacity: 0;
+    transition: all ease-in-out .2s;
+  }
+  .line-bottom{
+    background-color: hotpink;
+    transform-origin: center;
+    transform: rotate(-45deg) translate(6px, -5px);
+    height: 3px;
+    transition: all ease-in-out .2s;
+  }
+}
+
+.mobile-nav-visible {
+  transform: translateX(0%);
+}
+
 @media screen and (max-width: 768px) {
   nav {
     justify-content:space-between ;
@@ -404,6 +430,9 @@ footer {
     background-color: rgba(0, 0, 0, 0.9);
     justify-content: center;
     align-items: center;
+    padding: 1rem;
+    transform: translateX(100%);
+    transition: all ease-in-out .5s;
   }
 
   .burger {

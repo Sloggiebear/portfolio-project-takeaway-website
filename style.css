@@ -28,6 +28,7 @@ h1, h2, h3, h4, h5, h6 {
 .logo-footer {
   max-width: 150px;
   width: 100%;
+  margin-bottom: 1em;
 }
 
 nav {
@@ -464,14 +465,14 @@ footer .footer--col li {
   width: 30px;
   height: auto;
   margin: 10px 15px 0px 0px;
-  -webkit-transition: all ease-in-out 1.5s;
-  transition: all ease-in-out 1.5s;
+  -webkit-transition: all ease-in-out .3s;
+  transition: all ease-in-out .3s;
 }
 
 .social svg:hover {
   fill: hotpink;
-  -webkit-transform: scale(1.2);
-          transform: scale(1.2);
+  -webkit-transform: scale(1.1);
+          transform: scale(1.1);
 }
 
 .burger {
@@ -499,6 +500,39 @@ footer .footer--col li {
   margin: 3px 0px;
 }
 
+.close-symbol .line-top {
+  background-color: hotpink;
+  -webkit-transform-origin: center;
+          transform-origin: center;
+  -webkit-transform: rotate(45deg) translate(6px, 5px);
+          transform: rotate(45deg) translate(6px, 5px);
+  height: 3px;
+  -webkit-transition: all ease-in-out .2s;
+  transition: all ease-in-out .2s;
+}
+
+.close-symbol .line-middle {
+  opacity: 0;
+  -webkit-transition: all ease-in-out .2s;
+  transition: all ease-in-out .2s;
+}
+
+.close-symbol .line-bottom {
+  background-color: hotpink;
+  -webkit-transform-origin: center;
+          transform-origin: center;
+  -webkit-transform: rotate(-45deg) translate(6px, -5px);
+          transform: rotate(-45deg) translate(6px, -5px);
+  height: 3px;
+  -webkit-transition: all ease-in-out .2s;
+  transition: all ease-in-out .2s;
+}
+
+.mobile-nav-visible {
+  -webkit-transform: translateX(0%);
+          transform: translateX(0%);
+}
+
 @media screen and (max-width: 768px) {
   nav {
     -webkit-box-pack: justify;
@@ -524,6 +558,11 @@ footer .footer--col li {
     -webkit-box-align: center;
         -ms-flex-align: center;
             align-items: center;
+    padding: 1rem;
+    -webkit-transform: translateX(100%);
+            transform: translateX(100%);
+    -webkit-transition: all ease-in-out .5s;
+    transition: all ease-in-out .5s;
   }
   nav .burger {
     display: -webkit-box;

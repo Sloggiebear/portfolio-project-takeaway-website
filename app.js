@@ -13,7 +13,6 @@ async function getData() {
     try {
         const response = await fetch(apiURL, { method: 'GET' })
         const parsed = await response.json()
-        console.table(parsed)
         addNavLinks(parsed)
         addMenuSections(parsed)
     } catch (error) {
@@ -78,6 +77,8 @@ const addToOrderButton = document.getElementById('btn-addtoorder')
 let quantity = document.getElementById('quantity')
 const quantityMinus = document.getElementById('btn-quanity-minus')
 const quantityPlus = document.getElementById('btn-quanity-plus')
+const burger = document.getElementById('burger')
+const mobileNav = document.getElementById('navitems')
 
 //onclick - Hide the modal user clicks close button
 closeButton.addEventListener('click', () => {
@@ -114,7 +115,6 @@ quantityMinus.addEventListener('click', (event) => {
 //onclick - Increase the value of the order quantity
 quantityPlus.addEventListener('click', (event) => {
     event.preventDefault()
-    console.log("plus")
     let value = parseInt(quantity.value)
     value++
     quantity.value = value
@@ -137,3 +137,9 @@ function showModal(event) {
     modaltitle.innerText = getItemName
     modalprice.innerText = formatter.format(getItemPrice)
 }
+
+//onclick - toglle the mobile nav menu
+burger.addEventListener('click', () => {
+    mobileNav.classList.toggle('mobile-nav-visible')
+    burger.classList.toggle('close-symbol')
+})
